@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let t=Number(prompt("Enter the temperature:"))
+         if(t<-273.15){
+            document.write("temperature invalid")
+         }
+        else if(t==-273.15){
+            document.write("temperature absolute zero")
+         }
+       
+        else if(t>-273.15 & t<0){
+            document.write("temperature below freezing point")
+         }
+         else if(t==0){
+            document.write("temperature freezing point")
+         }
+         else if(t>0 & t<100){
+            document.write("temperature normal range")
+         }
+         else if(t==100){
+            document.write("temperature boiling point")
+         }
+         else{
+            document.write("temperature above boiling point")
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let s=Number(prompt("Enter  salary of employee"))
+     let hra1=.15*s
+     let da1=.17*s
+     let pf1=.19*s
+
+     let hra2=.07*s
+     let da2=.09*s
+     let pf2=.10*s
+
+     let hra3=.05*s
+     let da3=.07*s
+     let pf3=.08*s
+     if(s<15000){
+           document.write("hra"+hra1+"<br>"+"da"+da1+"<br>"+"pf"+pf1)
+     } 
+     else if(s>15000 & s<25000)  {
+        document.write("hra"+hra2+"<br>"+"da"+da2+"<br>"+"pf"+pf2)
+     }
+     else{
+        document.write("hra"+hra3+"<br>"+"da"+da3+"<br>"+"pf"+pf3)
+     }
+
+    </script>
+</body>
+</html>
