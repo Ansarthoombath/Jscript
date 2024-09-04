@@ -1,0 +1,18 @@
+<script>
+   let arr = [18, 7, 5, 20];
+
+   let largest = 0;
+   let secondLargest = 0;
+
+   for (let i = 0; i < arr.length; i++) {
+       if (arr[i] > largest) {
+           secondLargest = largest; 
+           largest = arr[i];
+       } else if (arr[i] > secondLargest && arr[i] !== largest) {
+           secondLargest = arr[i];
+       }
+   }
+
+   document.write("The largest is: " + largest + "<br>");
+   document.write("The second largest is: " + secondLargest + "<br>");
+</script>
