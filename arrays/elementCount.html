@@ -1,0 +1,20 @@
+<script>
+    let arr=[1,2,4,5,4,6]
+    let count=0
+    let flag=true
+    let a=Number(prompt("enter the value to be checked"))
+    for(i=0;i<arr.length-1;i++){
+        if(a==arr[i]){
+            count=count+1
+            flag=false
+        }
+
+
+    }
+    if(flag==false){
+        document.write(a+"found"+count+"times")
+    }
+    else{
+        document.write("not found")
+    }
+</script>
