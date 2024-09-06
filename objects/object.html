@@ -1,0 +1,29 @@
+<script>
+    let person = {
+        firstName: "John",
+        lastName:"Doe",
+        age:30,
+        address:{
+             street:"123 main street",
+             city:"anytown",
+             state:"CA"
+        },
+        greet:function(){
+            console.log("Hello, "+this.firstName)
+
+        }
+    }
+    console.log(person)
+    console.log(person["firstName"])
+    console.log(person.address.city)
+    delete person.lastName
+    console.log(person)
+    console.log(person.address)
+    console.log(person.greet())
+    
+    person.age=45
+    console.log(person)
+    n=prompt("Enter the value to be ")
+  
+  
+</script>
