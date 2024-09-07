@@ -1,0 +1,20 @@
+<script>
+
+
+    a=[5,7,8,2]
+    smallest=a[0]
+    secondsmall=a[0]
+    for(i=0;i<a.length;i++){
+        if(a[i]<smallest){
+            secondsmall=smallest
+            smallest=a[i]
+
+        }
+         else if(a[i]>smallest && a[i]<secondsmall){
+            secondsmall=a[i]
+            
+
+        }
+    }
+    document.write(secondsmall)
+</script>
