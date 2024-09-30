@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date("Jul 1 2020")
+        document.write(currentDate+"<br>")
+        let year = currentDate.getFullYear()
+        let minute= currentDate.getMinutes()
+        document.write(year+"<br>")
+        document.write(minute+"<br>")
+        currentDate.setDate(currentDate.getDate()+7)
+        document.write(currentDate+"<br>")
+        currentDate.setMonth(currentDate.getMonth()+1)
+        document.write(currentDate+"<br>")
+        currentDate.setHours(currentDate.getHours()-2)
+        document.write(currentDate)
+
+//         Wed Jul 08 2020 00:00:00 GMT+0530 (India Standard Time)
+// Sat Aug 08 2020 00:00:00 GMT+0530 (India Standard Time)
+// Fri Aug 07 2020 22:00:00 GMT+0530 (India Standard Time)
+
+    </script>
+</body>
+</html>
+
+<!-- ("July 1 2020")
+("JUlY,1,2020") 
+
+.getMonth()
+.getDate()
+.getHours()
+.getMinutes()
+.getSeconds()
+
+
+Wed Jul 01 2020 00:00:00 GMT+0530 (India Standard Time)
+2020
+0
+-->
+
