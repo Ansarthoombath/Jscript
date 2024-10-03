@@ -1,0 +1,24 @@
+<script>
+    try{
+        let num =10
+        a=0
+        let result=num/a
+       
+        if(a==0){
+            throw new Error("cannot use  0 to the variable a")
+        }
+        else{
+            document.write("Result:",result+"<br>")
+        }
+       
+    }
+    catch(error){
+        document.write("An error ocured",error.message+"<br>")
+    }
+    finally{
+        document.write("Execution complete")
+    }
+   
+   
+
+</script>

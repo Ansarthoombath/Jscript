@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Exception Handling</h1>
+    <button onclick="handleError()">Click to trigger Error</button>
+    <p id="message"></p>
+
+    <script>
+        function handleError(){
+            try{
+                let res = nonExistentFunction();
+
+            }
+            catch(error){
+                document.getElementById("message").innerHTML="An error occured: "+error.message
+            }
+            finally{
+                document.write("The execution completed")
+            }
+        }
+    </script>
+</body>
+</html>

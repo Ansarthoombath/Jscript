@@ -1,0 +1,18 @@
+<script>
+    try{
+        var a=10
+        var b=0
+        var res=a/b
+        if(b==0){
+            throw new Error("cannot use  0 to the variable b")
+        }
+        else{
+            document.write(res)
+        }
+    }
+    catch(error){
+        document.write("Error: ",error.message)
+        
+    }
+    
+</script>

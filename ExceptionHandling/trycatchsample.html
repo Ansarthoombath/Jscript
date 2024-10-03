@@ -1,0 +1,22 @@
+<script>
+    try{
+        let num =2
+        
+      
+       
+        if(num==2){
+            throw new Error(" Cannot use  2 to the variable num")
+        }
+        else{
+            document.write("Number",num+"<br>")
+        }
+       
+    }
+    catch(error){
+        document.write("An error ocured.",error.message+"<br>")
+    }
+
+    finally{
+        document.write("Execution complete")
+    }
+</script>
