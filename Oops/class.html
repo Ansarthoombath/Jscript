@@ -1,0 +1,15 @@
+<script>
+    class person{
+        constructor(name,yob){
+            this.name=name
+            this.yob=yob
+        }
+        age(){
+            return new Date().getFullYear()-this.yob
+        
+        }
+    }
+    let john=new person('john',2000)
+    console.log(john.age())
+
+</script>
