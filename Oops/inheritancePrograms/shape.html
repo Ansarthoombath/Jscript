@@ -1,0 +1,45 @@
+<script>
+    class Shape{
+        constructor(color){
+            this.color=color
+            this.area=0
+        }
+        displayInfo(){
+            return `Shape Info: Color-${this.color}, Area- ${this.area}`
+        }
+    }
+
+    class Circle extends Shape{
+        constructor(color,radius){
+            super(color)
+            this.radius=radius
+            this.area=Math.PI * Math.pow(radius,2)
+        }
+    }
+
+    class Rectangle extends Shape{
+        constructor(color,length,breadth){
+            super(color)
+            this.length=length
+            this.breadth=breadth
+            this.area=length*breadth
+        }
+    }
+    class Triangle extends Shape{
+        constructor(color,breadth,height){
+            super(color)
+            this.breadth=breadth
+            this.height=height
+            this.area=(1/2)*breadth*height
+        }
+    }
+
+    const circle = new Circle("Red", 10);
+    console.log(circle.displayInfo());
+
+    const rectangle = new Rectangle("Green",20,30)
+    console.log(rectangle.displayInfo())
+
+    const triangle= new Triangle("yellow",10,15)
+    console.log(triangle.displayInfo())
+</script>

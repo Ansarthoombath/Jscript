@@ -1,0 +1,43 @@
+<script>
+    class Calculator {
+        add(a, b) {
+            return a + b;
+        }
+    
+        subtract(a, b) {
+            return a - b;
+        }
+    
+        multiply(a, b) {
+            return a * b;
+        }
+    
+        divide(a, b) {
+            if (b === 0) {
+                return "Error: Division by zero";
+            }
+            return a / b;
+        }
+    }
+    
+    
+    class ScientificCalculator extends Calculator {
+        compare(a, b) {
+            if (a > b) {
+                return `${a} is greater than ${b}`;
+            } else if (a < b) {
+                return `${a} is less than ${b}`;
+            } else {
+                return `${a} is equal to ${b}`;
+            }
+        }
+    }
+    
+   
+    const sciCalc = new ScientificCalculator();
+    console.log(sciCalc.add(120, 4));
+    console.log(sciCalc.subtract(10, 2));
+    console.log(sciCalc.multiply(40, 5));
+    console.log(sciCalc.divide(10, 1));
+    console.log(sciCalc.compare(25, 5));
+    </script>
