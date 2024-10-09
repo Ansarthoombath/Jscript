@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="but">click Me</button>
+    <p class="clickable">hello</p>
+    <h1 class="clickable">Welcome</h1>
+
+
+
+   <script>
+   
+
+   
+     const touch = document.querySelectorAll('.clickable')
+     for (i=0;i<touch.length;i++){
+        touch[i].addEventListener('click',function(){
+            alert('hi')
+     })
+
+    
+      
+       
+     }
+
+   </script>
+</body>
+</html>
+
