@@ -1,0 +1,24 @@
+class Animal{
+    speak(){
+        console.log("animal wlaks")
+    }
+}
+
+class Dog extends Animal{
+    speak(){
+        console.log('dog barks')
+    }
+}
+class Cat extends Animal{
+    speak(){
+        // super.speak()
+        console.log('cat meows')
+    }
+}
+
+
+let myDog = new Dog()
+myDog.speak()
+
+let myCat=new Cat()
+myCat.speak()
