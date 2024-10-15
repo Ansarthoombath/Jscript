@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h2>something going to hidden</h2>
+
+<p >hide me</p>
+<p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, ex.
+
+</p>
+
+<h1>welcome</h1>
+<h6>introduction</h6>
+<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iusto harum, velit amet, consequuntur dolore accusamus numquam cum quos animi quasi. Commodi libero ratione voluptatem, vitae hic blanditiis sunt animi sequi obcaecati modi, velit tenetur, quae ab soluta odio quaerat? Provident beatae dolorem iure velit optio accusantium aut exercitationem maiores et in rerum itaque esse facere, mollitia repellendus. Perspiciatis molestias esse error, amet voluptatem et rem laudantium ea voluptate veritatis doloribus nostrum inventore sequi architecto! Vero delectus id amet adipisci aliquid. Error eaque dicta fugiat deserunt, adipisci, perspiciatis dolorum numquam consequatur sint cum at? Nobis cum voluptatum unde quod libero.
+
+</p>
+
+<button id="but1">click me</button>
+Name:<input type="text" name="fullname">
+Email:<input type="text" name="email">
+
+<h4>welcome</h4>
+
+<script>
+
+    $(document).ready(function(){
+        $("p").dblclick(function(){
+          //  $("*").hide()
+          alert("This paragraph was clicked.")
+        })
+        $("h1,h2,h6").click(function(){
+            $(this).hide()
+        })
+        $("input").focus(function(){
+            $(this).css("background-color","yellow")
+        })
+        $("input").blur(function(){
+            $(this).css("background-color","green")
+        })
+        $("h4").mouseenter(function(){
+          //  $("*").hide()
+          alert("you enterd mouse.")
+        })
+
+
+    })
+</script>
+</body>
+</html>
